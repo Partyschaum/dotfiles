@@ -1,0 +1,33 @@
+# global configuration
+config defaultToCurrentScreen true
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+
+# key bindings
+bind e:ctrl hint ASDFGHJKLQWERTYUIOPCVBN
+bind g:ctrl grid padding:10 0:4,6 1:6,4 2:6,4
+
+# Abstract positions
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+# Numpad location Bindings
+bind pad1:ctrl ${bottomleft}
+bind pad2:ctrl push bottom bar-resize:screenSizeY/2
+bind pad3:ctrl ${bottomright}
+bind pad4:ctrl ${lefthalf}
+bind pad5:ctrl ${full}
+bind pad6:ctrl ${righthalf}
+bind pad7:ctrl ${topleft}
+bind pad8:ctrl push top bar-resize:screenSizeY/2
+bind pad9:ctrl ${topright}
+
+# focus
+# bind i:ctrl focus 'iTerm'
+bind b:ctrl focus 'Google Chrome'
