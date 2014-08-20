@@ -33,19 +33,20 @@ DEFAULT_USER=hauke
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git autojump nyan)
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export JIMDO_TEST_HOST=stangegit.test
-export BUNDLER_EDITOR='/usr/local/bin/subl'
-export GOPATH='/usr/local/gocode'
-export PATH="/Users/hauke/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/Users/hauke/Development/depot_tools:$PATH"
-
-fpath=("/Users/hauke/Development/depot_tools/zsh-goodies" $fpath)
+export BUNDLER_EDITOR='/usr/local/bin/vim'
+export PATH="/Users/hauke/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/local/share/npm/bin:$PATH"
 
 eval "$(rbenv init -)"
-source /Users/hauke/.phpbrew/bashrc
-source /usr/local/share/zsh/site-functions/go
+# source /Users/hauke/.phpbrew/bashrc
+# source /usr/local/share/zsh/site-functions/go
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
