@@ -44,7 +44,8 @@ export JIMDO_TEST_HOST=stangegit.test
 export BUNDLER_EDITOR='/usr/local/bin/vim'
 export PATH="/Users/hauke/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/local/share/npm/bin:$PATH"
 
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
+
 # source /Users/hauke/.phpbrew/bashrc
 # source /usr/local/share/zsh/site-functions/go
 
