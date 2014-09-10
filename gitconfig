@@ -1,0 +1,11 @@
+[push]
+	default = simple
+[init]
+	templatedir = /Users/hauke/.git_template
+[user]
+	name = Hauke Stange
+	email = hauke@jimdo.com
+[alias]
+	ctags = !.git/hooks/ctags
+	st = status
+	co = checkout
