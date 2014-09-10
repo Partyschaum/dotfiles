@@ -50,6 +50,8 @@ eval "$(rbenv init -)"
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
+eval "$(nodenv init -)"
+
 # Open ssh tunnel for debugging purposes
 alias debug_testserver='ssh testserver -L 0.0.0.0:9000:localhost:9999'
 
@@ -63,3 +65,6 @@ alias ta="tmux attach"
 
 # Home of the docker daemon
 export DOCKER_HOST=tcp://127.0.0.1:4243
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
