@@ -4,11 +4,15 @@ config windowHintsShowIcons true
 config windowHintsIgnoreHiddenWindows false
 config windowHintsSpread true
 
-# key bindings
-bind e:ctrl hint ASDFGHJKLQWERTYUIOPCVBN
-bind g:ctrl grid padding:10 0:4,6 1:6,4 2:6,4
+# hyper key binding
+alias hyper ctrl;shift;alt;cmd
 
-# Abstract positions
+# key bindings
+bind e:${hyper} hint ASDFGHJKLQWERTYUIOPCVBN
+#bind g:${hyper} grid padding:10 0:4,6 1:6,4 2:6,4
+bind g:${hyper} grid padding:10 1920x1200:6,5
+
+# abstract positions
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
 alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
@@ -18,16 +22,21 @@ alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
 alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
 
 # Numpad location Bindings
-bind pad1:ctrl ${bottomleft}
-bind pad2:ctrl push bottom bar-resize:screenSizeY/2
-bind pad3:ctrl ${bottomright}
-bind pad4:ctrl ${lefthalf}
-bind pad5:ctrl ${full}
-bind pad6:ctrl ${righthalf}
-bind pad7:ctrl ${topleft}
-bind pad8:ctrl push top bar-resize:screenSizeY/2
-bind pad9:ctrl ${topright}
+bind pad1:${hyper} ${bottomleft}
+bind pad2:${hyper} push bottom bar-resize:screenSizeY/2
+bind pad3:${hyper} ${bottomright}
+bind pad4:${hyper} ${lefthalf}
+bind pad5:${hyper} ${full}
+bind pad6:${hyper} ${righthalf}
+bind pad7:${hyper} ${topleft}
+bind pad8:${hyper} push top bar-resize:screenSizeY/2
+bind pad9:${hyper} ${topright}
+
+bind j:${hyper} push bottom bar-resize:screenSizeY/2
+bind h:${hyper} ${lefthalf}
+bind l:${hyper} ${righthalf}
+bind k:${hyper} push top bar-resize:screenSizeY/2
 
 # focus
-# bind i:ctrl focus 'iTerm'
-bind b:ctrl focus 'Google Chrome'
+bind i:${hyper} focus 'iTerm'
+bind b:${hyper} focus 'Google Chrome'
