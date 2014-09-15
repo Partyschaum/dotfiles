@@ -9,8 +9,7 @@ alias hyper ctrl;shift;alt;cmd
 
 # key bindings
 bind e:${hyper} hint ASDFGHJKLQWERTYUIOPCVBN
-#bind g:${hyper} grid padding:10 0:4,6 1:6,4 2:6,4
-bind g:${hyper} grid padding:10 1920x1200:6,5
+bind g:${hyper} grid padding:10 0:4,6 1:6,4 2:6,4
 
 # abstract positions
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
