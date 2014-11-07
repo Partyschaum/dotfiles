@@ -35,6 +35,7 @@ bind j:${hyper} push bottom bar-resize:screenSizeY/2
 bind h:${hyper} ${lefthalf}
 bind l:${hyper} ${righthalf}
 bind k:${hyper} push top bar-resize:screenSizeY/2
+bind o:${hyper} ${full}
 
 # focus
 bind i:${hyper} focus 'iTerm'

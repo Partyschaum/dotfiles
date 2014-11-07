@@ -9,3 +9,5 @@
 	ctags = !.git/hooks/ctags
 	st = status
 	co = checkout
+[core]
+	excludesfile = /Users/hauke/.gitignore
